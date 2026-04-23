@@ -12,9 +12,11 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.0",
+    "@tailwindcss/vite": "^4.2.4",
     "@types/three": "^0.184.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "tailwindcss": "^4.2.4",
     "three": "^0.184.0",
     "zustand": "^5.0.12"
   },
