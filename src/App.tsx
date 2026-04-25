@@ -22,7 +22,7 @@ function App() {
         shadows
         orthographic
         camera={{
-          zoom: 180,
+          zoom: 100,
           position: [50, 50, 50],
           near: 0.1,
           far: 1000

@@ -1,6 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 import type { RoomItem } from "../data/roomConfig";
 import { useEffect } from "react";
+import { handleCloneScene } from "../utils/clonedScene";
 
 const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
@@ -20,96 +21,55 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
     clonedScene.traverse((child: any) => {
         if (child.isMesh) {
-            if (child.name.includes('desk') && child.material.name.includes('wood')) {
-                child.material.color.set('#6c4115');
-            }
 
-            if (child.name.includes('bedSingle') && child.material.name.includes('wood')) {
-                child.material.color.set('#565959');
-            }
+            handleCloneScene({ child, childName: 'desk', childMaterialName: 'wood', newColor: '#6c4115' });
 
-            if (child.name.includes('pillow')) {
-                child.material = child.material.clone();
-                child.material.color.set('#541a32');
-            }
-            if (child.name.includes('bedSingle') && child.material.name.includes('carpet')) {
-                child.material.color.set('#e9d2d2'); // Yatağa daha koyu bir kahve
-            }
+            handleCloneScene({ child, childName: 'bedSingle', childMaterialName: 'wood', newColor: '#565959' });
 
-            if (child.name.includes('bedSingle') && child.material.name.includes('metal')) {
-                child.material.color.set('#e7e7e7'); // Yatağa daha koyu bir kahve
-            }
+            handleCloneScene({ child, childName: 'pillow', childMaterialName: '', newColor: '#541a32' });
 
-            if (child.name.includes('Mesh_cover') && child.material.name.includes('carpet')) {
-                child.material.color.set('#b0b0b0');
-            }
+            handleCloneScene({ child, childName: 'bedSingle', childMaterialName: 'carpet', newColor: '#e9d2d2' });
 
-            if (child.name.includes('Mesh_cover_1') && child.material.name.includes('carpet')) {
-                child.material.color.set('#ffffff');
-            }
-            if (child.name.includes('Mesh_laptop') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#C0C0C0');
-            }
-            if (child.name.includes('Mesh_laptop_1') && child.material.name.includes('metal')) {
-                child.material.color.set('#7c7c7c');
-            }
-            if (child.name.includes('Mesh_laptop_2') && child.material.name.includes('metalMedium')) {
-                child.material.color.set('#2d2d2d');
-            }
-            if (child.name.includes('Mesh_computerScreen') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#000000');
-            }
-            if (child.name.includes('Mesh_computerScreen_1') && child.material.name.includes('metal')) {
-                child.material.color.set('#7a7a88');
-            }
+            handleCloneScene({ child, childName: 'bedSingle', childMaterialName: 'metal', newColor: '#e7e7e7' });
+
+            handleCloneScene({ child, childName: 'Mesh_cover', childMaterialName: 'carpet', newColor: '#b0b0b0' });
+
+            handleCloneScene({ child, childName: 'Mesh_cover_1', childMaterialName: 'carpet', newColor: '#ffffff' });
+
+            handleCloneScene({ child, childName: 'Mesh_laptop', childMaterialName: 'metalDark', newColor: '#C0C0C0' });
+
+            handleCloneScene({ child, childName: 'Mesh_laptop_1', childMaterialName: 'metal', newColor: '#7c7c7c' });
+
+            handleCloneScene({ child, childName: 'Mesh_laptop_2', childMaterialName: 'metalMedium', newColor: '#2d2d2d' });
+
+            handleCloneScene({ child, childName: 'Mesh_computerScreen', childMaterialName: 'metalDark', newColor: '#000000' });
+
+            handleCloneScene({ child, childName: 'Mesh_computerScreen_1', childMaterialName: 'metal', newColor: '#7a7a88' });
 
             // Keyboard & Mause
-            if (child.name.includes('Mesh_computerKeyboard') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#3d3d3d');
-            }
-            if (child.name.includes('Mesh_computerKeyboard_1') && child.material.name.includes('metalMedium')) {
-                child.material.color.set('#878787');
-            }
-            if (child.name.includes('computerMouse') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#878787');
-            }
+            handleCloneScene({ child, childName: 'Mesh_computerKeyboard', childMaterialName: 'metalDark', newColor: '#3d3d3d' });
+
+            handleCloneScene({ child, childName: 'Mesh_computerKeyboard_1', childMaterialName: 'metalMedium', newColor: '#878787' });
+
+            handleCloneScene({ child, childName: 'Mesh_computerMouse', childMaterialName: 'metalDark', newColor: '#878787' });
 
             // Chair
-            if (child.name.includes('chairDesk') && child.material.name.includes('metalMedium')) {
-                child.material.color.set('#000000');
-            }
-            if (child.name.includes('Mesh_chair') && child.material.name.includes('carpet')) {
-                child.material.color.set('#454545');
-            }
-            if (child.name.includes('Mesh_chair_1') && child.material.name.includes('metalMedium')) {
-                child.material.color.set('#5f5f5f');
-            }
-
-            // TV Ünitesi
-            if (child.name.includes('Mesh_cabinetBedDrawer') && child.material.name.includes('wood')) {
-                child.material.color.set('#4b2e0c');
-            }
+            handleCloneScene({ child, childName: 'Mesh_chair', childMaterialName: 'carpet', newColor: '#454545' });
+            handleCloneScene({ child, childName: 'Mesh_chair_1', childMaterialName: 'metalMedium', newColor: '#5f5f5f' });
 
             // Kapı ve Dolaplar
-            if (child.name.includes('Mesh_door') && child.material.name.includes('wood')) {
-                child.material.color.set('#6a6a6a');
-            }
+            handleCloneScene({ child, childName: 'Mesh_door', childMaterialName: 'wood', newColor: '#6a6a6a' });
 
             // Oturma grubu
-            if (child.name.includes('Mesh_loungeSofaCorner') && child.material.name.includes('carpet')) {
-                child.material.color.set('#c0c0c0');
-            }
+            handleCloneScene({ child, childName: 'Mesh_loungeSofaCorner', childMaterialName: 'carpet', newColor: '#c0c0c0' });
 
             // Duvarlar
-            if (child.name.includes('Mesh_wallHalf') && child.material.name.includes('wood')) {
-                child.material.color.set('#171e2b');
-            }
-            if (child.name.includes('Mesh_wallHalf_1') && child.material.name.includes('_defaultMat')) {
-                child.material.color.set('#0f192d');
-            }
-            if (child.name.includes('Mesh_wallHalf_2') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#0f192d');
-            }
+            handleCloneScene({ child, childName: 'Mesh_wallHalf', childMaterialName: 'wood', newColor: '#171e2b' });
+
+            handleCloneScene({ child, childName: 'Mesh_wallHalf_1', childMaterialName: '_defaultMat', newColor: '#0f192d' });
+
+            handleCloneScene({ child, childName: 'Mesh_wallHalf_2', childMaterialName: 'metalDark', newColor: '#0f192d' });
+
 
             // Pencere
             if (child.name.includes('Mesh_wallWindow') && child.material.name.includes('wood')) {
