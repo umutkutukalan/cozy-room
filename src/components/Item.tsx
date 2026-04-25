@@ -2,6 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import type { RoomItem } from "../data/roomConfig";
 import { useEffect } from "react";
 import { handleCloneScene } from "../utils/clonedScene";
+import * as THREE from 'three';
 
 const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
@@ -11,16 +12,16 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
     const clonedScene = scene.clone();
 
     useEffect(() => {
-        scene.traverse((child: any) => {
-            if (child.isMesh) {
+        scene.traverse((child) => {
+            if (child instanceof THREE.Mesh) {
                 console.log(`Parça Adı: ${child.name}`);
                 console.log(`Materyal Adı: ${child.material.name} - Renk: ${child.material.color.getHexString()}`);
             }
         });
     }, [scene]);
 
-    clonedScene.traverse((child: any) => {
-        if (child.isMesh) {
+    clonedScene.traverse((child) => {
+        if (child instanceof THREE.Mesh) {
 
             handleCloneScene({ child, childName: 'desk', childMaterialName: 'wood', newColor: '#6c4115' });
 
