@@ -132,4 +132,21 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0 - Math.PI / 2, 0],
     interactive: true,
   },
+
+  // Dolaplar
+  {
+    id: "kitchen_fridge_built_in_1",
+    model: "/models/kitchenFridgeBuiltIn.glb",
+    position: [2.4, 0, 2.5],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_fridge_built_in_2",
+    model: "/models/kitchenFridgeBuiltIn.glb",
+    position: [2.8, 0, 2.5],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+
 ];
