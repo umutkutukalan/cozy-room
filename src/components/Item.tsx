@@ -32,6 +32,58 @@ const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
                 child.material = child.material.clone();
                 child.material.color.set('#4078b0');
             }
+            if (child.name.includes('bedSingle') && child.material.name.includes('carpet')) {
+                child.material.color.set('#e9d2d2'); // Yatağa daha koyu bir kahve
+            }
+
+            if (child.name.includes('bedSingle') && child.material.name.includes('metal')) {
+                child.material.color.set('#e7e7e7'); // Yatağa daha koyu bir kahve
+            }
+
+            if (child.name.includes('Mesh_cover') && child.material.name.includes('carpet')) {
+                child.material.color.set('#0e5553');
+            }
+
+            if (child.name.includes('Mesh_cover_1') && child.material.name.includes('carpet')) {
+                child.material.color.set('#8cd0cf');
+            }
+            if (child.name.includes('Mesh_laptop') && child.material.name.includes('metalDark')) {
+                child.material.color.set('#C0C0C0');
+            }
+            if (child.name.includes('Mesh_laptop_1') && child.material.name.includes('metal')) {
+                child.material.color.set('#7c7c7c');
+            }
+            if (child.name.includes('Mesh_laptop_2') && child.material.name.includes('metalMedium')) {
+                child.material.color.set('#2d2d2d');
+            }
+            if (child.name.includes('Mesh_computerScreen') && child.material.name.includes('metalDark')) {
+                child.material.color.set('#000000');
+            }
+            if (child.name.includes('Mesh_computerScreen_1') && child.material.name.includes('metal')) {
+                child.material.color.set('#7a7a88');
+            }
+
+            // Keyboard & Mause
+            if (child.name.includes('Mesh_computerKeyboard') && child.material.name.includes('metalDark')) {
+                child.material.color.set('#3d3d3d');
+            }
+            if (child.name.includes('Mesh_computerKeyboard_1') && child.material.name.includes('metalMedium')) {
+                child.material.color.set('#878787');
+            }
+            if (child.name.includes('computerMouse') && child.material.name.includes('metalDark')) {
+                child.material.color.set('#878787');
+            }
+
+            // Chair
+            if (child.name.includes('chairDesk') && child.material.name.includes('metalMedium')) {
+                child.material.color.set('#000000');
+            }
+            if (child.name.includes('Mesh_chair') && child.material.name.includes('carpet')) {
+                child.material.color.set('#454545');
+            }
+            if (child.name.includes('Mesh_chair_1') && child.material.name.includes('metalMedium')) {
+                child.material.color.set('#5f5f5f');
+            }
         }
     });
 
