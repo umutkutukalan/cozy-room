@@ -72,47 +72,23 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
 
             // Pencere
-            if (child.name.includes('Mesh_wallWindow') && child.material.name.includes('wood')) {
-                child.material.color.set('#0f192d');
-            }
-            if (child.name.includes('Mesh_wallWindow_1') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#ffffff');
-            }
-            if (child.name.includes('Mesh_wallWindow_2') && child.material.name.includes('_defaultMat')) {
-                child.material.color.set('#0f192d');
-            }
-            if (child.name.includes('Mesh_window_1') && child.material.name.includes('wood')) {
-                child.material = child.material.clone();
-                child.material.color.set("#fffbfb");
-            }
+            handleCloneScene({ child, childName: 'Mesh_wallWindow', childMaterialName: 'wood', newColor: '#0f192d' });
+            handleCloneScene({ child, childName: 'Mesh_wallWindow_1', childMaterialName: 'metalDark', newColor: '#ffffff' });
+            handleCloneScene({ child, childName: 'Mesh_wallWindow_2', childMaterialName: '_defaultMat', newColor: '#0f192d' });
+            handleCloneScene({ child, childName: 'Mesh_window_1', childMaterialName: 'wood', newColor: '#fffbfb' });
 
             // Halılar
-            if (child.name.includes('Mesh_rugRectangle') && child.material.name.includes('carpet')) {
-                child.material.color.set('#9b9e9e');
-            }
-            if (child.name.includes('Mesh_rugRectangle_1') && child.material.name.includes('carpetDarker')) {
-                child.material.color.set('#c8c8c8');
-            }
+            handleCloneScene({ child, childName: 'Mesh_rugRectangle', childMaterialName: 'carpet', newColor: '#9b9e9e' });
+            handleCloneScene({ child, childName: 'Mesh_rugRectangle_1', childMaterialName: 'carpetDarker', newColor: '#c8c8c8' });
 
-            if (child.name.includes('Mesh_rugSquare') && child.material.name.includes('carpet')) {
-                child.material.color.set('#9b9e9e');
-            }
-            if (child.name.includes('Mesh_rugSquare_1') && child.material.name.includes('carpetDarker')) {
-                child.material.color.set('#c8c8c8');
-            }
+            handleCloneScene({ child, childName: 'Mesh_rugSquare', childMaterialName: 'carpet', newColor: '#9b9e9e' });
+            handleCloneScene({ child, childName: 'Mesh_rugSquare_1', childMaterialName: 'carpetDarker', newColor: '#c8c8c8' });
 
-            if (child.name.includes('Mesh_rugRound') && child.material.name.includes('carpet')) {
-                child.material.color.set('#6a0d0d');
-            }
-            if (child.name.includes('Mesh_rugRound_1') && child.material.name.includes('carpetDarker')) {
-                child.material.color.set('#dedede');
-            }
+            handleCloneScene({ child, childName: 'Mesh_rugRound', childMaterialName: 'carpet', newColor: '#6a0d0d' });
+            handleCloneScene({ child, childName: 'Mesh_rugRound_1', childMaterialName: 'carpetDarker', newColor: '#dedede' });
 
             // Zemin
-            if (child.name.includes('floorFull') && child.material.name.includes('wood')) {
-                child.material.color.set('#cfb39d');
-            }
-
+            handleCloneScene({ child, childName: 'floorFull', childMaterialName: 'wood', newColor: '#cfb39d' });
 
             // GECE AYARI: Ekranlar ve lambalar parlasın
             const isScreen = child.name.includes('computerScreen') || child.name.includes('laptop');
