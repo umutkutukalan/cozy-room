@@ -356,4 +356,27 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+
+  // --- Halılar
+  {
+    id: "rug_rectangle",
+    model: "/models/rugRectangle.glb",
+    position: [0.9, 0.1, 1.45],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "rug_square",
+    model: "/models/rugSquare.glb",
+    position: [0.6, 0.1, 2.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "rug_round",
+    model: "/models/rugRound.glb",
+    position: [1.65, 0.05, 2.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
 ];
