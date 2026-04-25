@@ -8,7 +8,7 @@ function App() {
   const [isNight, setIsNight] = useState(false); // Gece/Gündüz state'i
 
   return (
-    <div style={{ width: '100vw', height: '100vh', background: isNight ? '#0a0a0a' : '#164326' }} className="relative">
+    <div style={{ width: '100vw', height: '100vh', background: isNight ? '#0a0a0a' : '#b9b9b9' }} className="relative">
 
       {/* Gece/Gündüz Butonu */}
       <button
@@ -22,7 +22,7 @@ function App() {
         shadows
         orthographic
         camera={{
-          zoom: 100,
+          zoom: 180,
           position: [50, 50, 50],
           near: 0.1,
           far: 1000
@@ -30,7 +30,7 @@ function App() {
       >
 
         <ambientLight intensity={isNight ? 0.05 : 0.2} />
-        <pointLight position={[5, 5, 5]} intensity={isNight ? 0.5 : 0} color="#ffaa00" />
+        <pointLight position={[5, 5, 5]} intensity={isNight ? 0.5 : 0} color="#c2a771" />
 
         <Stage
           environment={isNight ? "night" : "city"}

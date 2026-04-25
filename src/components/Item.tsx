@@ -25,12 +25,12 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
             }
 
             if (child.name.includes('bedSingle') && child.material.name.includes('wood')) {
-                child.material.color.set('#0d4449');
+                child.material.color.set('#565959');
             }
 
             if (child.name.includes('pillow')) {
                 child.material = child.material.clone();
-                child.material.color.set('#4078b0');
+                child.material.color.set('#541a32');
             }
             if (child.name.includes('bedSingle') && child.material.name.includes('carpet')) {
                 child.material.color.set('#e9d2d2'); // Yatağa daha koyu bir kahve
@@ -41,11 +41,11 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
             }
 
             if (child.name.includes('Mesh_cover') && child.material.name.includes('carpet')) {
-                child.material.color.set('#0e5553');
+                child.material.color.set('#b0b0b0');
             }
 
             if (child.name.includes('Mesh_cover_1') && child.material.name.includes('carpet')) {
-                child.material.color.set('#8cd0cf');
+                child.material.color.set('#ffffff');
             }
             if (child.name.includes('Mesh_laptop') && child.material.name.includes('metalDark')) {
                 child.material.color.set('#C0C0C0');
