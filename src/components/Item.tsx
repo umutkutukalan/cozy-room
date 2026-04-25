@@ -84,7 +84,7 @@ const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
             if (child.name.includes('Mesh_chair_1') && child.material.name.includes('metalMedium')) {
                 child.material.color.set('#5f5f5f');
             }
-            
+
             // TV Ünitesi
             if (child.name.includes('Mesh_cabinetBedDrawer') && child.material.name.includes('wood')) {
                 child.material.color.set('#4b2e0c');
@@ -98,6 +98,32 @@ const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
             // Oturma grubu
             if (child.name.includes('Mesh_loungeSofaCorner') && child.material.name.includes('carpet')) {
                 child.material.color.set('#c0c0c0');
+            }
+
+            // Duvarlar
+            if (child.name.includes('Mesh_wallHalf') && child.material.name.includes('wood')) {
+                child.material.color.set('#2a5a2b');
+            }
+            if (child.name.includes('Mesh_wallHalf_1') && child.material.name.includes('_defaultMat')) {
+                child.material.color.set('#2a5a2b');
+            }
+            if (child.name.includes('Mesh_wallHalf_2') && child.material.name.includes('metalDark')) {
+                child.material.color.set('#2a5a2b');
+            }
+
+            // Pencere
+            if (child.name.includes('Mesh_wallWindow') && child.material.name.includes('wood')) {
+                child.material.color.set('#39603a');
+            }
+            if (child.name.includes('Mesh_wallWindow_1') && child.material.name.includes('metalDark')) {
+                child.material.color.set('#C9996B');
+            }
+            if (child.name.includes('Mesh_wallWindow_2') && child.material.name.includes('_defaultMat')) {
+                child.material.color.set('#2a5a2b');
+            }
+            if (child.name.includes('Mesh_window_1') && child.material.name.includes('wood')) {
+                child.material = child.material.clone();
+                child.material.color.set("#acacac");
             }
         }
     });
