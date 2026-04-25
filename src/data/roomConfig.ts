@@ -35,4 +35,34 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
+
+  // --- Masaüstü eşyaları
+  {
+    id: "laptop",
+    model: "/models/laptop.glb",
+    position: [1.32, 0.6, 0.4],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "computer_screen",
+    model: "/models/computerScreen.glb",
+    position: [1.58, 0.6, 0.26],
+    rotation: [0, 20 - Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "computer_keyboard",
+    model: "/models/computerKeyboard.glb",
+    position: [1.35, 0.6, 0.58],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "computer_mouse",
+    model: "/models/computerMouse.glb",
+    position: [1.7, 0.6, 0.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
 ];
