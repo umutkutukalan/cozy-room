@@ -149,4 +149,19 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
 
+  // Oturma Grubu
+  {
+    id: "sofa_lounge",
+    model: "/models/loungeSofaCorner.glb",
+    position: [1.1, 0, 1.98],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "table_coffee_square",
+    model: "/models/tableCoffeeSquare.glb",
+    position: [1.05, 0, 1.92],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
 ];
