@@ -65,4 +65,71 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0, 0],
     interactive: true,
   },
+
+  // --- Bookcase
+  {
+    id: "bookcase_closed",
+    model: "/models/bookcaseClosed.glb",
+    position: [2, 0, 0.4],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "books_1",
+    model: "/models/books.glb",
+    position: [2.35, 0.7, 0.7],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "books_2",
+    model: "/models/books.glb",
+    position: [2.43, 0.7, 0.7],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "books_3",
+    model: "/models/books.glb",
+    position: [2.3, 0.42, 0.65],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "lamp_round_table",
+    model: "/models/lampRoundTable.glb",
+    position: [2.3, 1, 0.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+
+  // Tv Ünitesi
+  {
+    id: "cabinet_bed_drawer_1",
+    model: "/models/cabinetBedDrawer.glb",
+    position: [2.7, 0, 1.8],
+    rotation: [0, 0 - Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "cabinet_bed_drawer_2",
+    model: "/models/cabinetBedDrawer.glb",
+    position: [2.7, 0, 1.6],
+    rotation: [0, 0 - Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "cabinet_bed_drawer_3",
+    model: "/models/cabinetBedDrawer.glb",
+    position: [2.7, 0, 1.4],
+    rotation: [0, 0 - Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "television_modern",
+    model: "/models/televisionModern.glb",
+    position: [3.5, 1, 2.45],
+    rotation: [0, 0 - Math.PI / 2, 0],
+    interactive: true,
+  },
 ];
