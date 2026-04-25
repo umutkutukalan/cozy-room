@@ -18,4 +18,21 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0, 0],
     interactive: true,
   },
+
+  // Çalışma Masası ve Sandalyesi
+  {
+    id: "desk_1",
+    model: "/models/desk.glb",
+    position: [1.2, 0.2, 0.6], // X: 1 birim sağda, Z: 1 birim önde (Kutunun içinde!)
+    rotation: [0, 0, 0],
+    interactive: true,
+    action: "openNotes",
+  },
+  {
+    id: "chair_desk",
+    model: "/models/chairDesk.glb",
+    position: [1.7, 0.1, 0.4],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
 ];
