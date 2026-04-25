@@ -92,7 +92,7 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
             // Kapı ve Dolaplar
             if (child.name.includes('Mesh_door') && child.material.name.includes('wood')) {
-                child.material.color.set('#754208');
+                child.material.color.set('#6a6a6a');
             }
 
             // Oturma grubu
@@ -102,28 +102,28 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
             // Duvarlar
             if (child.name.includes('Mesh_wallHalf') && child.material.name.includes('wood')) {
-                child.material.color.set('#2a5a2b');
+                child.material.color.set('#171e2b');
             }
             if (child.name.includes('Mesh_wallHalf_1') && child.material.name.includes('_defaultMat')) {
-                child.material.color.set('#2a5a2b');
+                child.material.color.set('#0f192d');
             }
             if (child.name.includes('Mesh_wallHalf_2') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#2a5a2b');
+                child.material.color.set('#0f192d');
             }
 
             // Pencere
             if (child.name.includes('Mesh_wallWindow') && child.material.name.includes('wood')) {
-                child.material.color.set('#39603a');
+                child.material.color.set('#0f192d');
             }
             if (child.name.includes('Mesh_wallWindow_1') && child.material.name.includes('metalDark')) {
-                child.material.color.set('#C9996B');
+                child.material.color.set('#ffffff');
             }
             if (child.name.includes('Mesh_wallWindow_2') && child.material.name.includes('_defaultMat')) {
-                child.material.color.set('#2a5a2b');
+                child.material.color.set('#0f192d');
             }
             if (child.name.includes('Mesh_window_1') && child.material.name.includes('wood')) {
                 child.material = child.material.clone();
-                child.material.color.set("#acacac");
+                child.material.color.set("#fffbfb");
             }
 
             // Halılar
