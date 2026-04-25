@@ -33,7 +33,7 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
             handleCloneScene({ child, childName: 'bedSingle', childMaterialName: 'metal', newColor: '#e7e7e7' });
 
-            handleCloneScene({ child, childName: 'Mesh_cover', childMaterialName: 'carpet', newColor: '#b0b0b0' });
+            handleCloneScene({ child, childName: 'Mesh_cover', childMaterialName: 'carpet', newColor: '#651313' });
 
             handleCloneScene({ child, childName: 'Mesh_cover_1', childMaterialName: 'carpet', newColor: '#ffffff' });
 
@@ -52,14 +52,23 @@ const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
             handleCloneScene({ child, childName: 'Mesh_computerKeyboard_1', childMaterialName: 'metalMedium', newColor: '#878787' });
 
-            handleCloneScene({ child, childName: 'Mesh_computerMouse', childMaterialName: 'metalDark', newColor: '#878787' });
+            handleCloneScene({ child, childName: 'computerMouse', childMaterialName: 'metalDark', newColor: '#878787' });
 
             // Chair
+            handleCloneScene({ child, childName: 'chairDesk', childMaterialName: 'metalMedium', newColor: '#000000' });
             handleCloneScene({ child, childName: 'Mesh_chair', childMaterialName: 'carpet', newColor: '#454545' });
             handleCloneScene({ child, childName: 'Mesh_chair_1', childMaterialName: 'metalMedium', newColor: '#5f5f5f' });
 
+            // TV Ünitesi
+            if (child.name.includes('Mesh_cabinetBedDrawer') && child.material.name.includes('wood')) {
+                child.material.color.set('#4b2e0c');
+            }
+
             // Kapı ve Dolaplar
+            handleCloneScene({ child, childName: 'doorway', childMaterialName: 'wood', newColor: '#6a6a6a' });
             handleCloneScene({ child, childName: 'Mesh_door', childMaterialName: 'wood', newColor: '#6a6a6a' });
+            handleCloneScene({ child, childName: 'Mesh_door_1', childMaterialName: 'metal', newColor: '#6a6a6a' });
+            handleCloneScene({ child, childName: 'Mesh_drawer_1', childMaterialName: 'wood', newColor: '#6a6a6a' });
 
             // Oturma grubu
             handleCloneScene({ child, childName: 'Mesh_loungeSofaCorner', childMaterialName: 'carpet', newColor: '#c0c0c0' });
