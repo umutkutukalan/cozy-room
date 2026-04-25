@@ -319,4 +319,41 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+
+  // --- 3. zemin taşları
+  {
+    id: "floor_full_31",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_32",
+    model: "/models/floorFull.glb",
+    position: [1.5, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_33",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_34",
+    model: "/models/floorFull.glb",
+    position: [2.5, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_35",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
 ];
