@@ -84,6 +84,21 @@ const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
             if (child.name.includes('Mesh_chair_1') && child.material.name.includes('metalMedium')) {
                 child.material.color.set('#5f5f5f');
             }
+            
+            // TV Ünitesi
+            if (child.name.includes('Mesh_cabinetBedDrawer') && child.material.name.includes('wood')) {
+                child.material.color.set('#4b2e0c');
+            }
+
+            // Kapı ve Dolaplar
+            if (child.name.includes('Mesh_door') && child.material.name.includes('wood')) {
+                child.material.color.set('#754208');
+            }
+
+            // Oturma grubu
+            if (child.name.includes('Mesh_loungeSofaCorner') && child.material.name.includes('carpet')) {
+                child.material.color.set('#c0c0c0');
+            }
         }
     });
 
