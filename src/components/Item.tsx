@@ -125,6 +125,33 @@ const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
                 child.material = child.material.clone();
                 child.material.color.set("#acacac");
             }
+
+            // Halılar
+            if (child.name.includes('Mesh_rugRectangle') && child.material.name.includes('carpet')) {
+                child.material.color.set('#9b9e9e');
+            }
+            if (child.name.includes('Mesh_rugRectangle_1') && child.material.name.includes('carpetDarker')) {
+                child.material.color.set('#c8c8c8');
+            }
+
+            if (child.name.includes('Mesh_rugSquare') && child.material.name.includes('carpet')) {
+                child.material.color.set('#9b9e9e');
+            }
+            if (child.name.includes('Mesh_rugSquare_1') && child.material.name.includes('carpetDarker')) {
+                child.material.color.set('#c8c8c8');
+            }
+
+            if (child.name.includes('Mesh_rugRound') && child.material.name.includes('carpet')) {
+                child.material.color.set('#6a0d0d');
+            }
+            if (child.name.includes('Mesh_rugRound_1') && child.material.name.includes('carpetDarker')) {
+                child.material.color.set('#dedede');
+            }
+
+            // Zemin
+            if (child.name.includes('floorFull') && child.material.name.includes('wood')) {
+                child.material.color.set('#cfb39d');
+            }
         }
     });
 
