@@ -379,4 +379,13 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0, 0],
     interactive: true,
   },
+
+  // --- Bitkiler
+  {
+    id: "potted_plant",
+    model: "/models/pottedPlant.glb",
+    position: [2.9, 0.1, 1.3],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
 ];
