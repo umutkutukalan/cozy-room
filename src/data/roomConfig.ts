@@ -164,4 +164,41 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+
+  // --- Arka duvar (Z=0'da)
+  {
+    id: "wall_half_arka_1",
+    model: "/models/wallHalf.glb",
+    position: [0.01, 0, 3],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_2",
+    model: "/models/wallHalf.glb",
+    position: [0.01, 0, 2.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_window",
+    model: "/models/wallWindow.glb",
+    position: [0.01, 0, 2],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_3",
+    model: "/models/wallHalf.glb",
+    position: [0.01, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_4",
+    model: "/models/wallHalf.glb",
+    position: [0.01, 0, 0.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
 ];
