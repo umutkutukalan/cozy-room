@@ -388,4 +388,22 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0, 0],
     interactive: true,
   },
+
+  // --- Kapı
+  {
+    id: "doorway",
+    model: "/models/doorway.glb",
+    position: [2.94, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+
+  // --- Ceket Askısı
+  {
+    id: "coat_rack_standing",
+    model: "/models/coatRackStanding.glb",
+    position: [1.75, 0.1, 2.85],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
 ];
