@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import type { RoomItem } from "../data/roomConfig";
 import { useEffect } from "react";
 
-const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
+const Item = ({ item, isNight }: { item: RoomItem, isNight: boolean }) => {
 
     const { scene } = useGLTF(item.model);
 
@@ -151,6 +151,21 @@ const Item = ({ item }: { item: RoomItem, isNight: boolean }) => {
             // Zemin
             if (child.name.includes('floorFull') && child.material.name.includes('wood')) {
                 child.material.color.set('#cfb39d');
+            }
+
+
+            // GECE AYARI: Ekranlar ve lambalar parlasın
+            const isScreen = child.name.includes('computerScreen') || child.name.includes('laptop');
+            const isLamp = child.name.includes('lamp') || child.name.includes('Light');
+
+            if (isScreen || isLamp) {
+                child.material = child.material.clone(); // Diğerlerini etkilemesin
+                if (isNight) {
+                    child.material.emissive.set(isScreen ? "#0b0b0d" : "#aeb100"); // Ekran mavi, lamba sarı parlasın
+                    child.material.emissiveIntensity = 2; // Parlama gücü
+                } else {
+                    child.material.emissiveIntensity = 0; // Gündüz kapalı
+                }
             }
         }
     });
