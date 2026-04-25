@@ -201,4 +201,48 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+
+  // --- Sağ duvar (X=3'te)
+  {
+    id: "wall_half_sag_1",
+    model: "/models/wallHalf.glb",
+    position: [0.5, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_2",
+    model: "/models/wallHalf.glb",
+    position: [1, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_3",
+    model: "/models/wallHalf.glb",
+    position: [1.5, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_4",
+    model: "/models/wallHalf.glb",
+    position: [2, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_5",
+    model: "/models/wallHalf.glb",
+    position: [2.5, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_6",
+    model: "/models/wallHalf.glb",
+    position: [3, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
 ];
