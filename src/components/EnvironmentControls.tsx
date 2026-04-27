@@ -13,9 +13,11 @@ const EnvironmentControls = ({ ambientIntensity, setAmbientIntensity }: Environm
     // Audio nesnesini bir kez oluştur ve ayarlarını yap
     const rainAudio = useRef<HTMLAudioElement | null>(null);
 
-    if (!rainAudio.current) {
-        rainAudio.current = new Audio('/sounds/relaxing_rain.mp3');
-        rainAudio.current.loop = true; // Loop'u burada bir kez set ediyoruz
+    if (rainAudio.current === null) {
+        const audio = new Audio('/sounds/relaxing_rain.mp3');
+        audio.loop = true;
+        // TypeScript burada .current'ın Mutable (değiştirilebilir) olduğunu anlamalı
+        (rainAudio as React.MutableRefObject<HTMLAudioElement | null>).current = audio;
     }
 
     // Sadece rainVolume değişince çalışır
@@ -27,13 +29,14 @@ const EnvironmentControls = ({ ambientIntensity, setAmbientIntensity }: Environm
     }, [rainVolume]);
 
     const toggleRain = () => {
-        if (!rainAudio.current) return;
+        // Eğer current varsa işlemleri yap
+        const audio = rainAudio.current;
+        if (!audio) return;
 
         if (isRainPlaying) {
-            rainAudio.current.pause();
+            audio.pause();
         } else {
-            // Kullanıcı etkileşimiyle başlattığımız için tarayıcı engellemez
-            rainAudio.current.play().catch(err => console.error("Audio error:", err));
+            audio.play().catch(err => console.error("Ses çalınamadı:", err));
         }
         setIsRainPlaying(!isRainPlaying);
     };
