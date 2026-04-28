@@ -356,6 +356,186 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+  
+  // --- 4. zemin taşları
+  {
+    id: "floor_full_41",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 0],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_42",
+    model: "/models/floorFull.glb",
+    position: [1.5, 0, 0],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_43",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 0],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_44",
+    model: "/models/floorFull.glb",
+    position: [2.5, 0, 0],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_45",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 0],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  
+  // --- 5. zemin taşları
+  {
+    id: "floor_full_51",
+    model: "/models/floorFull.glb",
+    position: [1, 0, -1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_52",
+    model: "/models/floorFull.glb",
+    position: [1.5, 0, -1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_53",
+    model: "/models/floorFull.glb",
+    position: [2, 0, -1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_54",
+    model: "/models/floorFull.glb",
+    position: [2.5, 0, -1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_55",
+    model: "/models/floorFull.glb",
+    position: [3, 0, -1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 6. zemin taşları
+  {
+    id: "floor_full_61",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 4],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_62",
+    model: "/models/floorFull.glb",
+    position: [1.5, 0, 4],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_63",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 4],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_64",
+    model: "/models/floorFull.glb",
+    position: [2.5, 0, 4],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_65",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 4],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 7. zemin taşları
+  {
+    id: "floor_full_71",
+    model: "/models/floorFull.glb",
+    position: [3.5, 0, 3],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_72",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 3],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_73",
+    model: "/models/floorFull.glb",
+    position: [4.5, 0, 3],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 8. zemin taşları
+  {
+    id: "floor_full_81",
+    model: "/models/floorFull.glb",
+    position: [3.5, 0, 2],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_82",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 2],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_83",
+    model: "/models/floorFull.glb",
+    position: [4.5, 0, 2],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  
+  // --- 9. zemin taşları
+  {
+    id: "floor_full_91",
+    model: "/models/floorFull.glb",
+    position: [3.5, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_92",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_93",
+    model: "/models/floorFull.glb",
+    position: [4.5, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
 
   // --- Halılar
   {
