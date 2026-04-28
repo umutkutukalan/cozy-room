@@ -16,19 +16,17 @@ function App() {
 
   return (
     <div style={{ width: '100vw', height: '100vh', background: getBackgroundColor(), transition: 'background 0.5s ease' }} className="relative flex items-center">
-      <div className="h-full w-1/5">
-        {/* 2. KATMAN: UI Overlay - Flexbox ile Sabitleme */}
-        <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-between p-6">
+      {/* 2. KATMAN: UI Overlay - Flexbox ile Sabitleme */}
+      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-between p-6">
 
-          {/* ÜST PANEL: Sol (Focus), Sağ (Settings) */}
-          <div className="flex justify-between items-start pointer-events-auto">
+        {/* ÜST PANEL: Sol (Focus), Sağ (Settings) */}
+        <div className="flex justify-between items-start pointer-events-auto">
+          <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-4">
-                <EnvironmentControls
-                  ambientIntensity={ambientIntensity}
-                  setAmbientIntensity={setAmbientIntensity}
-                />
-              </div>
+              <EnvironmentControls
+                ambientIntensity={ambientIntensity}
+                setAmbientIntensity={setAmbientIntensity}
+              />
             </div>
           </div>
         </div>
@@ -42,8 +40,8 @@ function App() {
             position: 'absolute',
             width: '150%',
             height: '150%',
-            right: '-55%',
-            bottom: '-35%',
+            right: '-48%',
+            bottom: '-45%',
             pointerEvents: 'none'
           }}
           camera={{

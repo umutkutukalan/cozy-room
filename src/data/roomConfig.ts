@@ -356,7 +356,7 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
-  
+
   // --- 4. zemin taşları
   {
     id: "floor_full_41",
@@ -393,7 +393,7 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
-  
+
   // --- 5. zemin taşları
   {
     id: "floor_full_51",
@@ -513,7 +513,7 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
-  
+
   // --- 9. zemin taşları
   {
     id: "floor_full_91",
@@ -533,6 +533,57 @@ export const roomItems: RoomItem[] = [
     id: "floor_full_93",
     model: "/models/floorFull.glb",
     position: [4.5, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 10. zemin taşları
+  {
+    id: "floor_full_101",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_102",
+    model: "/models/floorFull.glb",
+    position: [1.5, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_103",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_104",
+    model: "/models/floorFull.glb",
+    position: [2.5, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_105",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_106",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 6],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_107",
+    model: "/models/floorFull.glb",
+    position: [1.5, 0, 6],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
