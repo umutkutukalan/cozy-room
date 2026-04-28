@@ -40,7 +40,7 @@ function App() {
             position: 'absolute',
             width: '150%',
             height: '180%',
-            right: '-45%',
+            right: '-35%',
             bottom: '-75%',
             pointerEvents: 'none'
           }}

@@ -293,34 +293,58 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
 
+  // --- Arka duvar devamı (Z=4'te)
   {
     id: "wall_half_arka_18",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 3.5],
+    position: [4, 0, 4.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_19",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 3],
+    position: [4, 0, 4],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_20",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 2.5],
+    position: [4, 0, 3.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_21",
     model: "/models/wallHalf.glb",
+    position: [4, 0, 3],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_22",
+    model: "/models/wallHalf.glb",
+    position: [4, 0, 2.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_23",
+    model: "/models/wallHalf.glb",
     position: [4, 0, 2],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+  {
+    id: "wall_half_arka_24",
+    model: "/models/wallHalf.glb",
+    position: [4, 0, 1.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- Arka duvar devamı
   {
     id: "wall_half_arka_22",
     model: "/models/wallHalf.glb",
@@ -380,7 +404,6 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
 
-
   // --- Sağ duvar devamı (X=3'te, Z=-2'ye kadar)
   {
     id: "wall_half_sag_7",
@@ -401,56 +424,56 @@ export const roomItems: RoomItem[] = [
   {
     id: "wall_half_sag_9",
     model: "/models/wallHalf.glb",
-    position: [0.5, 0, 3.5],
+    position: [0.5, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_10",
     model: "/models/wallHalf.glb",
-    position: [1, 0, 3.5],
+    position: [1, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_11",
     model: "/models/wallHalf.glb",
-    position: [1.5, 0, 3.5],
+    position: [1.5, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_12",
     model: "/models/wallHalf.glb",
-    position: [2, 0, 3.5],
+    position: [2, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_13",
     model: "/models/wallHalf.glb",
-    position: [2.5, 0, 3.5],
+    position: [2.5, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_14",
     model: "/models/wallHalf.glb",
-    position: [3, 0, 3.5],
+    position: [3, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_15",
     model: "/models/wallHalf.glb",
-    position: [3.5, 0, 3.5],
+    position: [3.5, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
   {
     id: "wall_half_sag_16",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 3.5],
+    position: [4, 0, 4.2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
