@@ -38,14 +38,14 @@ function App() {
           orthographic
           style={{
             position: 'absolute',
-            width: '150%',
+            width: '180%',
             height: '180%',
-            right: '-35%',
-            bottom: '-75%',
+            right: '-50%',
+            bottom: '-65%',
             pointerEvents: 'none'
           }}
           camera={{
-            zoom: 200,
+            zoom: 220,
             position: [50, 50, 50],
             near: 0.1,
             far: 1000
