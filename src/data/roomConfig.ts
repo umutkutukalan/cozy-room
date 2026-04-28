@@ -419,7 +419,7 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
-  
+
   // --- Sağ duvar devamı (X=3'te, Z=3.5'e kadar)
   {
     id: "wall_half_sag_9",
@@ -869,4 +869,84 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
+
+  // Mutfak Tezgahı
+  {
+    id: "kitchen_stove",
+    model: "/models/kitchenStove.glb",
+    position: [0.55, 0, 4.7],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_sink",
+    model: "/models/kitchenSink.glb",
+    position: [0.95, 0, 4.7],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_cabinet_1",
+    model: "/models/kitchenCabinetDrawer.glb",
+    position: [1.35, 0, 4.7],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_cabinet_2",
+    model: "/models/kitchenCabinetDrawer.glb",
+    position: [1.75, 0, 4.7],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+
+  
+  // Mutfak Kapakları
+  {
+    id: "kitchen_cabinet_1",
+    model: "/models/kitchenCabinetUpperLow.glb",
+    position: [1.4, 1.05, 4.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_cabinet_2",
+    model: "/models/kitchenCabinetUpperLow.glb",
+    position: [0.1, 1.05, 4.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_cabinet_3",
+    model: "/models/kitchenCabinetUpperLow.glb",
+    position: [0.1, 1.05, 4.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_cabinet_4",
+    model: "/models/kitchenCabinetUpper.glb",
+    position: [2, 0.85, 4.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  {
+    id: "kitchen_cabinet_5",
+    model: "/models/kitchenCabinetUpper.glb",
+    position: [2.4, 0.85, 4.5],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+  
+  // Buzdolabı
+  {
+    id: "kitchen_fridge_small",
+    model: "/models/kitchenFridgeLarge.glb",
+    position: [0.02, 0, 4.6],
+    rotation: [0, 0, 0],
+    interactive: true,
+  },
+
+
+
 ];
