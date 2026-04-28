@@ -39,9 +39,9 @@ function App() {
           style={{
             position: 'absolute',
             width: '150%',
-            height: '150%',
-            right: '-48%',
-            bottom: '-45%',
+            height: '180%',
+            right: '-45%',
+            bottom: '-75%',
             pointerEvents: 'none'
           }}
           camera={{
