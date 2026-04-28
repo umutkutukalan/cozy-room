@@ -297,49 +297,147 @@ export const roomItems: RoomItem[] = [
   {
     id: "wall_half_arka_18",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 4.5],
+    position: [4.1, 0, 8.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 8],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 7.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 7],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 6.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 6],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 5.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_18",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 4.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_19",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 4],
+    position: [4.1, 0, 4],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_20",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 3.5],
+    position: [4.1, 0, 3.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_21",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 3],
+    position: [4.1, 0, 3],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_22",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 2.5],
+    position: [4.1, 0, 2.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_23",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 2],
+    position: [4.1, 0, 2],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "wall_half_arka_24",
     model: "/models/wallHalf.glb",
-    position: [4, 0, 1.5],
+    position: [4.1, 0, 1.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_25",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_25",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 0.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_25",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, 0],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_25",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, -0.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_25",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, -1],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_arka_25",
+    model: "/models/wallHalf.glb",
+    position: [4.1, 0, -1.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -403,6 +501,20 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
+  {
+    id: "wall_half_sag_6",
+    model: "/models/wallHalf.glb",
+    position: [3.5, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_6",
+    model: "/models/wallHalf.glb",
+    position: [4, 0, 0],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
 
   // --- Sağ duvar devamı (X=3'te, Z=-2'ye kadar)
   {
@@ -416,6 +528,48 @@ export const roomItems: RoomItem[] = [
     id: "wall_half_sag_8",
     model: "/models/wallHalf.glb",
     position: [1, 0, -2],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_8",
+    model: "/models/wallHalf.glb",
+    position: [1.5, 0, -2],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_8",
+    model: "/models/wallHalf.glb",
+    position: [2, 0, -2],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_8",
+    model: "/models/wallHalf.glb",
+    position: [2.5, 0, -2],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_8",
+    model: "/models/wallHalf.glb",
+    position: [3, 0, -2],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_8",
+    model: "/models/wallHalf.glb",
+    position: [3.5, 0, -2],
+    rotation: [0, Math.PI, 0],
+    interactive: true,
+  },
+  {
+    id: "wall_half_sag_8",
+    model: "/models/wallHalf.glb",
+    position: [4, 0, -2],
     rotation: [0, Math.PI, 0],
     interactive: true,
   },
@@ -551,6 +705,13 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
+  {
+    id: "floor_full_25",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
 
   // --- 3. zemin taşları
   {
@@ -598,13 +759,6 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
   {
-    id: "floor_full_42",
-    model: "/models/floorFull.glb",
-    position: [1.5, 0, 0],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
     id: "floor_full_43",
     model: "/models/floorFull.glb",
     position: [2, 0, 0],
@@ -612,16 +766,16 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
   {
-    id: "floor_full_44",
+    id: "floor_full_45",
     model: "/models/floorFull.glb",
-    position: [2.5, 0, 0],
+    position: [3, 0, 0],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "floor_full_45",
     model: "/models/floorFull.glb",
-    position: [3, 0, 0],
+    position: [4, 0, 0],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -635,13 +789,6 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
   {
-    id: "floor_full_52",
-    model: "/models/floorFull.glb",
-    position: [1.5, 0, -1],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
     id: "floor_full_53",
     model: "/models/floorFull.glb",
     position: [2, 0, -1],
@@ -649,16 +796,16 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
   {
-    id: "floor_full_54",
+    id: "floor_full_55",
     model: "/models/floorFull.glb",
-    position: [2.5, 0, -1],
+    position: [3, 0, -1],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
   {
     id: "floor_full_55",
     model: "/models/floorFull.glb",
-    position: [3, 0, -1],
+    position: [4, 0, -1],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -672,23 +819,9 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
   {
-    id: "floor_full_62",
-    model: "/models/floorFull.glb",
-    position: [1.5, 0, 4],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
     id: "floor_full_63",
     model: "/models/floorFull.glb",
     position: [2, 0, 4],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
-    id: "floor_full_64",
-    model: "/models/floorFull.glb",
-    position: [2.5, 0, 4],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -699,38 +832,15 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
-
-  // --- 7. zemin taşları
-  {
-    id: "floor_full_71",
-    model: "/models/floorFull.glb",
-    position: [3.5, 0, 3],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
   {
     id: "floor_full_72",
     model: "/models/floorFull.glb",
-    position: [4, 0, 3],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
-    id: "floor_full_73",
-    model: "/models/floorFull.glb",
-    position: [4.5, 0, 3],
+    position: [4, 0, 4],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
 
   // --- 8. zemin taşları
-  {
-    id: "floor_full_81",
-    model: "/models/floorFull.glb",
-    position: [3.5, 0, 2],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
   {
     id: "floor_full_82",
     model: "/models/floorFull.glb",
@@ -738,33 +848,12 @@ export const roomItems: RoomItem[] = [
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
-  {
-    id: "floor_full_83",
-    model: "/models/floorFull.glb",
-    position: [4.5, 0, 2],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
 
   // --- 9. zemin taşları
-  {
-    id: "floor_full_91",
-    model: "/models/floorFull.glb",
-    position: [3.5, 0, 1],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
   {
     id: "floor_full_92",
     model: "/models/floorFull.glb",
     position: [4, 0, 1],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
-    id: "floor_full_93",
-    model: "/models/floorFull.glb",
-    position: [4.5, 0, 1],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -778,23 +867,9 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
   {
-    id: "floor_full_102",
-    model: "/models/floorFull.glb",
-    position: [1.5, 0, 5],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
     id: "floor_full_103",
     model: "/models/floorFull.glb",
     position: [2, 0, 5],
-    rotation: [0, Math.PI / 2, 0],
-    interactive: true,
-  },
-  {
-    id: "floor_full_104",
-    model: "/models/floorFull.glb",
-    position: [2.5, 0, 5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -815,7 +890,111 @@ export const roomItems: RoomItem[] = [
   {
     id: "floor_full_107",
     model: "/models/floorFull.glb",
-    position: [1.5, 0, 6],
+    position: [2, 0, 6],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_108",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 6],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_108",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 6],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 11. zemin taşları
+  {
+    id: "floor_full_108",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 7],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_110",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 7],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_112",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 7],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_115",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 7],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 12. zemin taşları
+  {
+    id: "floor_full_108",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 8],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_110",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 8],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_112",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 8],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_115",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 8],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+
+  // --- 13. zemin taşları
+  {
+    id: "floor_full_108",
+    model: "/models/floorFull.glb",
+    position: [1, 0, 8.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_110",
+    model: "/models/floorFull.glb",
+    position: [2, 0, 8.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_112",
+    model: "/models/floorFull.glb",
+    position: [3, 0, 8.5],
+    rotation: [0, Math.PI / 2, 0],
+    interactive: true,
+  },
+  {
+    id: "floor_full_115",
+    model: "/models/floorFull.glb",
+    position: [4, 0, 8.5],
     rotation: [0, Math.PI / 2, 0],
     interactive: true,
   },
@@ -900,7 +1079,6 @@ export const roomItems: RoomItem[] = [
     interactive: true,
   },
 
-  
   // Mutfak Kapakları
   {
     id: "kitchen_cabinet_1",
@@ -937,7 +1115,7 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0, 0],
     interactive: true,
   },
-  
+
   // Buzdolabı
   {
     id: "kitchen_fridge_small",
@@ -946,7 +1124,4 @@ export const roomItems: RoomItem[] = [
     rotation: [0, 0, 0],
     interactive: true,
   },
-
-
-
 ];
