@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber"
 import Experience from "./components/Experience"
 import { useState } from "react";
 import EnvironmentControls from "./components/EnvironmentControls";
+import MusicPlayer from "./components/MusicPlayer";
 
 function App() {
 
@@ -30,6 +31,12 @@ function App() {
             </div>
           </div>
         </div>
+
+        {/* Müzik Çalar*/}
+        <div className="flex justify-center items-end pointer-events-auto pb-4">
+          <MusicPlayer />
+        </div>
+
       </div>
 
       <div className="h-full w-full relative overflow-hidden">
