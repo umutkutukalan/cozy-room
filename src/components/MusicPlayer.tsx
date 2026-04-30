@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { FaPause, FaPlay } from "react-icons/fa";
 
 const MusicPlayer = () => {
     const [volume, setVolume] = useState(0.3);
@@ -38,9 +39,13 @@ const MusicPlayer = () => {
                 className="w-12 h-12 flex items-center justify-center bg-white text-black rounded-full hover:scale-105 transition-transform"
             >
                 {isPlaying ? (
-                    <span className="text-sm">Pause</span>
+                    <span className="text-sm">
+                        <FaPause />
+                    </span>
                 ) : (
-                    <span className="text-sm pl-1">Play</span>
+                    <span className="text-sm pl-1">
+                        <FaPlay />
+                    </span>
                 )}
             </button>
 
